@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  place-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.bg-pattern-top {
+  position: absolute;
+  right: 1030px;
+  bottom: 300px;
+}
+
+.bg-pattern-bottom {
+  position: fixed;
+  right: -50px;
+  bottom: -500px;
+  z-index: -1;
+}
+.main-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 385px;
+  width: 350px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.bg-card {
+  background-image: url(/images/bg-pattern-card.svg);
+  height: 150px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+}
+.bg-card img {
+  border-radius: 50px;
+  position: absolute;
+  left: 125px;
+  top: 100px;
+  border: 3px solid #fff;
+}
+
+.card-informations-container {
+  background-color: #fff;
+  display: flex;
+  place-content: center;
+}
+.card-informations-content {
+  margin-top: 80px;
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  max-width: 135px;
+  gap: 10px;
+}
+
+.card-informations-content h1 {
+  color: hsl(229, 23%, 23%);
+}
+
+.card-informations-content span {
+  color: hsl(227, 10%, 46%);
+}
+.city-information {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.social-media-stats-container {
+  padding: 20px 40px;
+  border-top: 2px solid hsl(0, 0%, 90%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.followers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.likes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-numbers {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.kind-social-media-numbers {
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 375px) {
+  .bg-pattern-top {
+    position: absolute;
+    right: 100px;
+    bottom: 380px;
+  }
+
+  .bg-pattern-bottom {
+    position: fixed;
+    right: -700px;
+    bottom: -600px;
+  }
+}
